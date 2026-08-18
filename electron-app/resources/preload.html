@@ -43,11 +43,6 @@
 
         .custom-spinner {
             align-self: center;
-        }
-
-        .custom-spinner svg {
-            width: 16vw;
-            height: 16vh;
             animation-delay: 0;
             animation-duration: 2s;
             animation-iteration-count: infinite;
@@ -61,12 +56,41 @@
             }
 
             50% {
-                transform: scale(0.8);
+                transform: scale(0.92);
             }
 
             100% {
                 transform: scale(1);
             }
+        }
+
+        .stemreach-logo {
+            position: relative;
+            display: inline-block;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 800;
+            font-size: 6vw;
+            letter-spacing: -0.01em;
+            padding-top: 0.12em;
+        }
+
+        .stemreach-logo .stem {
+            background: linear-gradient(to right, #C026D3, #7C3AED);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .stemreach-logo .reach {
+            color: #7C3AED;
+        }
+
+        .stemreach-logo svg {
+            position: absolute;
+            top: 0.03em;
+            right: 0.03em;
+            width: 0.24em;
+            height: 0.24em;
         }
     </style>
 </head>
@@ -74,48 +98,16 @@
 <body>
     <div class="spinner-container">
         <div class="custom-spinner">
-            <svg
-                id="spinner"
-                xmlns="http://www.w3.org/2000/svg"
-                width="200"
-                height="200"
-                viewBox="0 0 200 200"
-            >
-                <defs>
-                    <linearGradient
-                        id="stemreachGradient"
-                        x1="0%"
-                        y1="0%"
-                        x2="100%"
-                        y2="100%"
-                    >
-                        <stop offset="0%" stop-color="#C026D3" />
-                        <stop offset="100%" stop-color="#7C3AED" />
-                    </linearGradient>
-                </defs>
-                <rect
-                    x="4"
-                    y="4"
-                    width="192"
-                    height="192"
-                    rx="48"
-                    fill="url(#stemreachGradient)"
-                />
-                <text
-                    x="100"
-                    y="142"
-                    text-anchor="middle"
-                    font-family="Arial, sans-serif"
-                    font-weight="800"
-                    font-size="118"
-                    fill="#ffffff"
-                >S</text>
-                <path
-                    transform="translate(151,-12) scale(2.8333) rotate(45,12,12)"
-                    fill="#EF4444"
-                    d="M2 9 L13 9 L13 4 L22 12 L13 20 L13 15 L2 15 Z"
-                />
-            </svg>
+            <span class="stemreach-logo">
+                <span class="stem">STEM</span><span class="reach">reach</span>
+                <svg
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    style="transform: rotate(-45deg)"
+                >
+                    <path d="M2 9 L13 9 L13 4 L22 12 L13 20 L13 15 L2 15 Z" fill="#EF4444" />
+                </svg>
+            </span>
         </div>
     </div>
 </body>
