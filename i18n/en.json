@@ -1,8 +1,14 @@
 {
   "arduino": {
     "about": {
-      "detail": "Version: {0}\nDate: {1}{2}\nCLI Version: {3}\n\n{4}",
-      "label": "About {0}"
+      "cliVersion": "CLI Version: {0}",
+      "copyright": "Copyright © {0} STEMreach and/or its affiliated companies",
+      "customizedBy": "Customized by LIXR",
+      "date": "Date: {0}",
+      "ide": "IDE",
+      "label": "About {0}",
+      "title": "About STEMReach IDE",
+      "version": "Version: {0}"
     },
     "account": {
       "goToCloudEditor": "Go to Cloud Editor",
@@ -270,7 +276,8 @@
       "reference": "Reference",
       "search": "Search on Arduino.cc",
       "troubleshooting": "Troubleshooting",
-      "visit": "Visit Arduino.cc"
+      "visit": "Visit Arduino.cc",
+      "visitStemreach": "Visit STEMreach.space"
     },
     "ide-updater": {
       "checkForUpdates": "Check for STEMReach IDE Updates",

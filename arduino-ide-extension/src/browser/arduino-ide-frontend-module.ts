@@ -265,6 +265,10 @@ import {
   IDEUpdaterDialog,
   IDEUpdaterDialogProps,
 } from './dialogs/ide-updater/ide-updater-dialog';
+import {
+  STEMReachAboutDialog,
+  STEMReachAboutDialogProps,
+} from './dialogs/about/about-dialog';
 import { ElectronIpcConnectionProvider } from '@theia/core/lib/electron-browser/messaging/electron-ipc-connection-source';
 import { MonitorModel } from './monitor-model';
 import { MonitorManagerProxyClientImpl } from './monitor-manager-proxy-client-impl';
@@ -981,6 +985,11 @@ export default new ContainerModule((bind, unbind, isBound, rebind) => {
   bind(IDEUpdaterDialog).toSelf().inSingletonScope();
   bind(IDEUpdaterDialogProps).toConstantValue({
     title: 'IDEUpdater',
+  });
+
+  bind(STEMReachAboutDialog).toSelf().inSingletonScope();
+  bind(STEMReachAboutDialogProps).toConstantValue({
+    title: 'About',
   });
 
   bind(UserFieldsDialog).toSelf().inSingletonScope();

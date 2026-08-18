@@ -1,6 +1,6 @@
 {
   "name": "stemreach-ide",
-  "version": "2.3.11",
+  "version": "1.0.0",
   "description": "STEMReach IDE",
   "repository": "https://github.com/arduino/arduino-ide.git",
   "author": "Arduino SA",

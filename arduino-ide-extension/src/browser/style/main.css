@@ -106,6 +106,10 @@
     background-color: var(--theia-titleBar-activeBackground);
 }
 
+#theia-top-panel {
+    background-color: var(--theia-arduino-toolbar-background);
+}
+
 #arduino-toolbar-container {
     display: flex;
     width: 100%;

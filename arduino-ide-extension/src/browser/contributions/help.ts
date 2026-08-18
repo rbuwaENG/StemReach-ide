@@ -89,6 +89,10 @@ export class Help extends Contribution {
       createOpenHandler('https://www.arduino.cc/')
     );
     registry.registerCommand(
+      Help.Commands.VISIT_STEMREACH,
+      createOpenHandler('https://www.stemreach.space/')
+    );
+    registry.registerCommand(
       Help.Commands.PRIVACY_POLICY,
       createOpenHandler('https://www.arduino.cc/en/privacy-policy')
     );
@@ -127,6 +131,10 @@ export class Help extends Contribution {
     registry.registerMenuAction(ArduinoMenus.HELP__FIND_GROUP, {
       commandId: Help.Commands.VISIT_ARDUINO.id,
       order: '6',
+    });
+    registry.registerMenuAction(ArduinoMenus.HELP__FIND_GROUP, {
+      commandId: Help.Commands.VISIT_STEMREACH.id,
+      order: '6.5',
     });
     registry.registerMenuAction(ArduinoMenus.HELP__FIND_GROUP, {
       commandId: Help.Commands.PRIVACY_POLICY.id,
@@ -181,6 +189,11 @@ export namespace Help {
     export const VISIT_ARDUINO: Command = {
       id: 'arduino-visit-arduino',
       label: nls.localize('arduino/help/visit', 'Visit Arduino.cc'),
+      category: 'Arduino',
+    };
+    export const VISIT_STEMREACH: Command = {
+      id: 'arduino-visit-stemreach',
+      label: nls.localize('arduino/help/visitStemreach', 'Visit STEMreach.space'),
       category: 'Arduino',
     };
     export const PRIVACY_POLICY: Command = {

@@ -1,6 +1,7 @@
 #theia-top-panel {
     min-height: 64px;
     flex-direction: column;
+    background-color: var(--theia-arduino-toolbar-background);
 }
 
 #theia-top-panel .p-TabBar-toolbar {

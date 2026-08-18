@@ -169,6 +169,16 @@ export class ArduinoFrontendContribution
   registerColors(colors: ColorRegistry): void {
     colors.register(
       {
+        id: 'arduino.toolbar.background',
+        defaults: {
+          dark: 'titleBar.activeBackground',
+          light: 'titleBar.activeBackground',
+          hcDark: 'titleBar.activeBackground',
+          hcLight: 'titleBar.activeBackground',
+        },
+        description: 'Background color of the top toolbar panel.',
+      },
+      {
         id: 'arduino.toolbar.button.background',
         defaults: {
           dark: 'button.background',
