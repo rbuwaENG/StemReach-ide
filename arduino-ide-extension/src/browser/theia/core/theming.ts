@@ -8,16 +8,16 @@ import { assertUnreachable } from '../../../common/utils';
 
 export namespace ArduinoThemes {
   export const light: Theme = {
-    id: 'arduino-theme',
+    id: 'stemreach-theme',
     type: 'light',
-    label: 'Light (Arduino)',
-    editorTheme: 'arduino-theme',
+    label: 'Light (STEMReach)',
+    editorTheme: 'stemreach-theme',
   };
   export const dark: Theme = {
-    id: 'arduino-theme-dark',
+    id: 'stemreach-theme-dark',
     type: 'dark',
-    label: 'Dark (Arduino)',
-    editorTheme: 'arduino-theme-dark',
+    label: 'Dark (STEMReach)',
+    editorTheme: 'stemreach-theme-dark',
   };
 }
 

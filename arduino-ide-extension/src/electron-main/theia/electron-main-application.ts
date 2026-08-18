@@ -84,7 +84,7 @@ function enableFileLogger() {
     process.env['XDG_CONFIG_HOME'] = xdgConfigHome;
   }
   setupFileLog({
-    appName: 'Arduino IDE',
+    appName: 'STEMReach IDE',
     maxSize: 10 * 1024 * 1024,
   });
   for (const name of consoleLogFunctionNames) {
@@ -893,10 +893,10 @@ async function updateFrontendApplicationConfigFromPackageJson(
 }
 
 const fallbackFrontendAppConfig: FrontendApplicationConfig = {
-  applicationName: 'Arduino IDE',
+  applicationName: 'STEMReach IDE',
   defaultTheme: {
-    light: 'arduino-theme',
-    dark: 'arduino-theme-dark',
+    light: 'stemreach-theme',
+    dark: 'stemreach-theme-dark',
   },
   defaultIconTheme: 'none',
   validatePreferencesSchema: false,
