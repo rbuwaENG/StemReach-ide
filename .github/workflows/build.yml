@@ -55,7 +55,11 @@ env:
     - config:
         # Human identifier for the job.
         name: Windows
-        runs-on: windows-latest
+        # windows-latest now resolves to an image with a newer Visual Studio
+        # ("18") whose version string node-gyp@9.4.1 (bundled with Node 18.17.1)
+        # fails to parse. Pin to windows-2022, which ships VS2022 (17.x) that
+        # node-gyp@9.4.1 recognizes.
+        runs-on: windows-2022
         # The value is a string representing a JSON document.
         # Setting this to null causes the job to run directly in the runner machine instead of in a container.
         container: |
