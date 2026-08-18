@@ -78,7 +78,11 @@ jobs:
         operating-system:
           - macos-latest
           - ubuntu-latest
-          - windows-latest
+          # windows-latest now resolves to an image with a newer Visual Studio
+          # ("18") whose version string node-gyp@9.4.1 (bundled with Node
+          # 18.17.1) fails to parse. Pin to windows-2022, which ships VS2022
+          # (17.x) that node-gyp@9.4.1 recognizes.
+          - windows-2022
 
     steps:
       - name: Checkout
