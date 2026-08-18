@@ -59,10 +59,10 @@
     "target": "electron",
     "frontend": {
       "config": {
-        "applicationName": "Arduino IDE",
+        "applicationName": "STEMReach IDE",
         "defaultTheme": {
-          "light": "arduino-theme",
-          "dark": "arduino-theme-dark"
+          "light": "stemreach-theme",
+          "dark": "stemreach-theme-dark"
         },
         "defaultIconTheme": "none",
         "validatePreferencesSchema": false,
@@ -103,10 +103,10 @@
     }
   },
   "author": "Arduino SA",
-  "description": "Arduino IDE",
+  "description": "STEMReach IDE",
   "build": {
-    "appId": "cc.arduino.IDE2",
-    "productName": "Arduino IDE",
+    "appId": "cc.stemreach.IDE2",
+    "productName": "STEMReach IDE",
     "asar": false,
     "detectUpdateChannel": false,
     "generateUpdatesFilesForAllChannels": true,
